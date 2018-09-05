@@ -1,0 +1,18 @@
+--name:my-sql
+--author:kenfujii
+--create time:2018-09-05 13:56
+
+CREATE TABLE some_table (
+  id BIGINT COMMENT 'test id',
+  value STRING COMMENT 'test value'
+);
+
+SHOW TABLES;
+
+INSERT INTO some_table (id, value) VALUES (1, "Hello"), (2, "World"), (3, "Hi");
+
+SELECT * FROM some_table LIMIT 5;
+
+SELECT id, Lower_test(value) FROM some_table LIMIT 5;
+
+TRUNCATE TABLE some_table;
